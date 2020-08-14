@@ -395,7 +395,7 @@ input[type="submit"] :hover {
 /*RESPONSIVENESS*/
 @media screen and (max-width: 768px) {
   body {
-    background: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash\ \(1\).jpg")
+    background: url("https://user-images.githubusercontent.com/62024866/90286032-46e25780-de75-11ea-8421-a61fab9f04ea.jpg")
       no-repeat center fixed;
     background-size: cover;
   }
