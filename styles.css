@@ -409,7 +409,7 @@ input[type="submit"] :hover {
   }
 
   .about-heading {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .section-heading {
     font-size: 3rem;
@@ -429,6 +429,13 @@ input[type="submit"] :hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
   .about-image {
     width: 30rem;
     margin-bottom: 5rem;
@@ -437,6 +444,28 @@ input[type="submit"] :hover {
     font-size: 8rem;
   }
   .landing-text h6 {
+    font-size: 1.4rem;
+  }
+  .about-heading {
+    font-size: 5rem;
+  }
+  .section-heading {
+    font-size: 3rem;
+  }
+  .about-details {
+    flex-direction: initial;
+  }
+  .about-details {
+    margin: 0 2rem;
+  }
+  .about-details h1 {
+    font-size: 6rem;
+  }
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+  .about-details p {
     font-size: 1.4rem;
   }
   .about .container {
