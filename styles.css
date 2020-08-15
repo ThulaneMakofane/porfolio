@@ -453,7 +453,7 @@ input[type="submit"] :hover {
     height: 7rem;
   }
   .about-details p {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   .about .container {
     flex-direction: column;
