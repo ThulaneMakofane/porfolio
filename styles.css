@@ -281,12 +281,6 @@ section {
 
 /*-----portfolio*/
 
-/*.portfolio-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}*/
 .grid {
   margin-top: 10rem;
   display: grid;
@@ -294,16 +288,10 @@ section {
   grid-gap: 2.5rem;
   text-align: center;
 }
-/*.portfolio-item:last-child {
-  margin-bottom: 0;
+.portfolio .section-heading {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
-.portfolio-image {
-  flex: 1;
-}
-.porfolio-description {
-  flex: 1;
-}
-*/
 .porfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -329,13 +317,13 @@ section {
   color: #b3d82c;
 }
 .has-margin-right {
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 
 /*-----contacts*/
 
 form {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 10rem;
 }
@@ -350,19 +338,20 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 5px;
+  padding: 0.8rem;
+  margin-bottom: 4px;
   border: none;
   outline-color: #fd57bf;
 }
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
-  padding: 1rem 2rem;
-  color: #eee;
+  background-color: white;
+  padding: 2rem 3rem;
+  color: #fd57bf;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: background-color 650ms;
+  text-transform: capitalize;
 }
 input[type="submit"] :hover {
   color: #2f67cd;
