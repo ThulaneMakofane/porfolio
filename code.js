@@ -4,6 +4,9 @@ function onClickMenu() {
 
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
+document.getElementById("about").onclick = function () {
+  window.location.hash = "#about";
+};
 
 $(document).ready(function () {
   $(".submit").click(function (event) {
