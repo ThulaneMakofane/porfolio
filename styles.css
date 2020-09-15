@@ -24,7 +24,7 @@ p {
   font-size: 1.8rem;
   font-weight: 300;
 }
-.img {
+img {
   width: 100%;
 }
 /*barrrrrrrr*/
@@ -114,7 +114,7 @@ p {
 
 /*start header*/
 header {
-  width: 100%;
+  width: 80%;
   height: 100vh;
 }
 
