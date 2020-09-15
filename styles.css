@@ -78,6 +78,7 @@ img {
   top: 0;
   left: 0;
   position: absolute;
+  width: 100%;
 }
 .menu-bg {
   z-index: 1;
@@ -448,7 +449,10 @@ input[type="submit"] :hover {
   }
 
   .menu-bg {
-    width: 160%;
+    width: 100%;
+  }
+  .change-bg {
+    width: 100%;
   }
 
   .about-image {
