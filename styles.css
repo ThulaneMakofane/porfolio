@@ -82,7 +82,7 @@ img {
 }
 .menu-bg {
   z-index: 1;
-  width: 100;
+  width: 0;
   height: 0;
   margin: 60px 0 30px 30px;
   background: rgb(19, 2, 19);
@@ -93,7 +93,7 @@ img {
   z-index: 2;
 }
 .change-bg {
-  width: 100%;
+  width: 540px;
   height: 540px;
   transform: translate(-60%, -30%);
 }
@@ -446,12 +446,9 @@ input[type="submit"] :hover {
     text-align: center;
     padding-left: 7rem;
     margin-top: 5rem;
-    width: 100%;
+    width: 80%;
   }
 
-  .menu-bg {
-    width: 160%;
-  }
   .change-bg {
     width: 160%;
   }
