@@ -86,7 +86,7 @@ img {
   margin: 60px 0 30px 30px;
   background: rgb(19, 2, 19);
 
-  transition: 0.1 ease-in;
+  transition: 0.1 ease;
 }
 #menu-bar {
   z-index: 2;
