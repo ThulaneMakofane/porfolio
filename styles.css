@@ -434,7 +434,7 @@ input[type="submit"] :hover {
 }
 @media screen and (max-width: 600px) {
   .container {
-    width: 80%;
+    width: 100%;
     max-width: 100rem;
     height: 100%;
     margin: 0 auto;
@@ -449,7 +449,7 @@ input[type="submit"] :hover {
   }
 
   .menu-bg {
-    width: 100%;
+    width: 160%;
   }
   .change-bg {
     width: 100%;
