@@ -86,7 +86,7 @@ img {
   margin: 60px 0 30px 30px;
   background: rgb(19, 2, 19);
 
-  transition: 0.3s ease;
+  transition: 0.1 ease-in;
 }
 #menu-bar {
   z-index: 2;
@@ -441,9 +441,7 @@ input[type="submit"] :hover {
   .menu-bg {
     width: 160%;
   }
-  .menu-bg a {
-    color: white;
-  }
+
   .about-image {
     width: 30rem;
     margin-bottom: 5rem;
@@ -482,8 +480,7 @@ input[type="submit"] :hover {
   .profile-image {
     margin: 0 0 7rem 0;
   }
-  .portfolio-item {
-  }
+
   .portfolio-image {
     margin-left: 5rem;
     order: 1;
