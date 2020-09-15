@@ -113,8 +113,8 @@ img {
 }
 
 /*start header*/
-header {
-  height: 100vh;
+.hero {
+  min-height: calc(100vh - 60px);
 }
 
 .landing-text {
