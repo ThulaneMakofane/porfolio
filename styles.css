@@ -12,8 +12,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash\ \(1\).jpg")
-    no-repeat center fixed;
+  background-color: #270b38;
   background-size: cover;
 }
 
@@ -34,7 +33,8 @@ img {
   height: 30px;
   margin: 30px 0 20px 20px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
+  display: inline-block;
 }
 .bar {
   height: 5px;
@@ -55,6 +55,7 @@ img {
   color: #b81568;
   text-decoration: none;
   font-size: 1.8rem;
+  padding: 5rem;
 }
 .nav li a:hover {
   font-weight: bold;
@@ -65,16 +66,19 @@ img {
   padding: 16px 0;
 }
 .nav {
-  padding: 4rem;
+  padding: 12px;
   margin: 0 20px;
   transition: 0.3s ease;
   display: none;
+  width: 100%;
+  justify-content: center;
 }
 .menu-bg,
 #menu-bar {
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
+  width: 100%;
 }
 .menu-bg {
   z-index: 1;
@@ -83,13 +87,13 @@ img {
   margin: 60px 0 30px 30px;
   background: rgb(19, 2, 19);
 
-  transition: 0.3s ease;
+  transition: 0.1 ease;
 }
 #menu-bar {
   z-index: 2;
 }
 .change-bg {
-  width: 550px;
+  width: 540px;
   height: 540px;
   transform: translate(-60%, -30%);
 }
@@ -110,7 +114,7 @@ img {
 }
 
 /*start header*/
-header {
+.hero {
   width: 100%;
   height: 100vh;
 }
@@ -282,12 +286,6 @@ section {
 
 /*-----portfolio*/
 
-/*.portfolio-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}*/
 .grid {
   margin-top: 10rem;
   display: grid;
@@ -295,16 +293,10 @@ section {
   grid-gap: 2.5rem;
   text-align: center;
 }
-/*.portfolio-item:last-child {
-  margin-bottom: 0;
+.portfolio .section-heading {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
-.portfolio-image {
-  flex: 1;
-}
-.porfolio-description {
-  flex: 1;
-}
-*/
 .porfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -330,13 +322,13 @@ section {
   color: #b3d82c;
 }
 .has-margin-right {
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 
 /*-----contacts*/
 
 form {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 10rem;
 }
@@ -351,19 +343,20 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 5px;
+  padding: 0.8rem;
+  margin-bottom: 4px;
   border: none;
   outline-color: #fd57bf;
 }
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
-  padding: 1rem 2rem;
-  color: #eee;
+  background-color: white;
+  padding: 2rem 3rem;
+  color: #fd57bf;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: background-color 650ms;
+  text-transform: capitalize;
 }
 input[type="submit"] :hover {
   color: #2f67cd;
@@ -381,23 +374,35 @@ input[type="submit"] :hover {
   position: relative;
 }
 
-/*.up {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-  background-color: #eee;
-  top: -2.5rem;
-  right: 5rem;
-  border-radius: 100%;
-}
+/* a scroll up button
 */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ffe838; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
+#myBtn:hover {
+  background-color: #fd57bf; /* Add a dark-grey background on hover */
+}
 /*RESPONSIVENESS*/
 @media screen and (max-width: 768px) {
   body {
-    background: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash\ \(1\).jpg")
-      no-repeat center fixed;
+    background-color: #270b38;
     background-size: cover;
+  }
+  #menu {
+    display: inline-block;
   }
 
   .landing-text h1 {
@@ -409,7 +414,7 @@ input[type="submit"] :hover {
   }
 
   .about-heading {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .section-heading {
     font-size: 3rem;
@@ -429,6 +434,25 @@ input[type="submit"] :hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #nav {
+    justify-content: center;
+    text-align: center;
+    padding-left: 7rem;
+    margin-top: 5rem;
+    width: 80%;
+  }
+
+  .change-bg {
+    width: 160%;
+  }
+
   .about-image {
     width: 30rem;
     margin-bottom: 5rem;
@@ -439,14 +463,35 @@ input[type="submit"] :hover {
   .landing-text h6 {
     font-size: 1.4rem;
   }
+  .about-heading {
+    font-size: 5rem;
+  }
+  .section-heading {
+    font-size: 3rem;
+  }
+  .about-details {
+    flex-direction: initial;
+  }
+  .about-details {
+    margin: 0 2rem;
+  }
+  .about-details h1 {
+    font-size: 6rem;
+  }
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+  .about-details p {
+    font-size: 1.7rem;
+  }
   .about .container {
     flex-direction: column;
   }
   .profile-image {
     margin: 0 0 7rem 0;
   }
-  .portfolio-item {
-  }
+
   .portfolio-image {
     margin-left: 5rem;
     order: 1;
